@@ -15,7 +15,7 @@ def fetch_global_widfire_data():
     try:
         data = pd.read_csv(url)
         total_rows= len(data)
-        data = data[data['frp'] > 30]
+        data = data[data['frp'] > 50]
         total_filtered_data = len(data)
         return_dict = {
             "total_rows": total_rows,
