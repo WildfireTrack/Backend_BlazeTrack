@@ -7,5 +7,4 @@ router = APIRouter(tags=["GIVE DATA"])
 
 @router.get("/")
 def give_data():
-    payload = fetch_global_widfire_data()
-    return {"data": payload}
+    return fetch_global_widfire_data()
